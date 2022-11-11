@@ -26,7 +26,7 @@ export function AppRoutes() {
         }
       >
         <Route index element={<SignIn />} />
-        <Route path="/cadastro-empresa" element={<SignUp />} />
+        <Route path="/cad" element={<SignUp />} />
       </Route>
 
       <Route

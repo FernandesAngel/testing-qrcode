@@ -1,9 +1,9 @@
-import { useAuth } from "@/contexts/auth";
-import { useToast } from "@/contexts/toast";
+import { useAuth } from '@/contexts/auth';
+import { useToast } from '@/contexts/toast';
 
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from 'react-router-dom';
 
-import * as S from "./styles";
+import * as S from './styles';
 
 export function SignIn() {
   const { addToast } = useToast();
@@ -15,7 +15,7 @@ export function SignIn() {
   }
 
   const handleSignIn = () => {
-    signIn({ email: "imbitubadigital33@gmail.com", password: "12345678" });
+    signIn({ email: 'imbitubadigital33@gmail.com', password: '12345678' });
   };
 
   return (
@@ -24,7 +24,7 @@ export function SignIn() {
       <button
         type="button"
         onClick={() =>
-          addToast({ message: "Aqui a mensagem da hora", type: "success" })
+          addToast({ message: 'Aqui a mensagem da hora', type: 'success' })
         }
       >
         Toast
@@ -32,6 +32,7 @@ export function SignIn() {
       <button type="button" onClick={handleSignIn}>
         Signin
       </button>
+      <Link to="/cad">Cad</Link>
     </S.Container>
   );
 }
