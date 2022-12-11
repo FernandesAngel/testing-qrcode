@@ -8,5 +8,7 @@ export const Left = styled.div`
   background: #999;
   min-height: 100vh;
 `;
-export const Right = styled.div``;
+export const Right = styled.div`
+  width: 100%;
+`;
 export const Content = styled.main``;
