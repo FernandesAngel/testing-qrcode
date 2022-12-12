@@ -17,13 +17,13 @@ export const TitleContainer = styled.div`
 export const Text = styled.h2`
   color: ${(props) => props.theme.colors.grey900};
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.8125rem;
 `;
 export const Description = styled.h2`
   color: ${(props) => props.theme.colors.grey900};
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
 `;
 export const ButtonContainer = styled.div`
