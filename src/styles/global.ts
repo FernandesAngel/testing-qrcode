@@ -59,4 +59,7 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+  .menu-active{
+    background-color: ${(props) => props.theme.colors.purple700};
+  }
 `;

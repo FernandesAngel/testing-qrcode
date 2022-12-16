@@ -9,6 +9,7 @@ export const Container = styled.div`
   height: 55px;
   margin-bottom: 20px;
   position: relative;
+  z-index: 50;
 `;
 
 export const Menu = styled.button`
@@ -23,8 +24,8 @@ export const MenuContainer = styled.div<MenuContainerProps>`
   position: absolute;
   top: 55px;
   transform: ${(props) =>
-    props.isOpen ? 'translateX(0)' : 'translateX(-100%)'};
-  transition: transform 0.5s ease-in-out;
+    props.isOpen ? 'translateX(0)' : 'translateX(-400%)'};
+  transition: transform 0.4s ease-in-out;
 
   left: 0;
   background-color: ${(props) => props.theme.colors.purple950};

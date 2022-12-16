@@ -15,6 +15,7 @@ export const BannerContainer = styled.div`
   margin: 10px 0 5px;
   img {
     width: 100%;
+    height: 7.1rem;
     object-fit: cover;
   }
 `;
@@ -53,7 +54,6 @@ export const ContentContainer = styled.div`
   line-height: 1.0625rem;
   display: flex;
   width: 100%;
-  justify-content: space-between;
   margin: 0.4rem 0;
   padding: 10px;
   border: 1px solid ${(props) => props.theme.colors.purple200};

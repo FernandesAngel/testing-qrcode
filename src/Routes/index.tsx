@@ -1,6 +1,5 @@
 import { SignIn } from '@/pages/SignIn';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Home } from '@/pages/Home';
 
 import { PrivateRoutes } from './PrivateRoutes';
 // import { useAuth } from '@/contexts/auth';
@@ -12,6 +11,8 @@ import { ProfileStep1 } from '@/pages/Profile/ProfileStep1';
 import { ProfileStep2 } from '@/pages/Profile/ProfileStep2';
 import { ProfileStep3 } from '@/pages/Profile/ProfileStep3';
 import { Sales } from '@/pages/Sales';
+import { DeliverPrize } from '@/pages/DeliverPrize';
+import { UserOverview } from '@/pages/DeliverPrize/UserOverview';
 
 export function AppRoutes() {
   // const { data } = useAuth();
@@ -31,8 +32,10 @@ export function AppRoutes() {
       </Route>
 
       <Route path="dashboard" element={<PrivateRoutes isLogged={true} />}>
-        <Route index element={<Home />} />
+        <Route index element={<Sales />} />
         <Route path="promocoes" element={<Sales />} />
+        <Route path="entregar-premio" element={<DeliverPrize />} />
+        <Route path="entregar-premio/resumo" element={<UserOverview />} />
         <Route path="perfil" element={<ProfileStep1 />} />
         <Route path="perfil/endereco" element={<ProfileStep2 />} />
         <Route path="perfil/trocar-senha" element={<ProfileStep3 />} />
