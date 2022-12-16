@@ -1,5 +1,5 @@
-import { useAuth } from "@/contexts/auth";
-import * as S from "./styles";
+import { useAuth } from '@/contexts/auth';
+import * as S from './styles';
 
 export function Home() {
   const { signOut } = useAuth();

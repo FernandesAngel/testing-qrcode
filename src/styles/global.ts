@@ -9,28 +9,37 @@ export const GlobalStyles = createGlobalStyle`
 
   @media(max-width: 1366px){
     html {
-      font-size: 76.75%;
+      font-size: 96%;
     }
   }
   @media(max-width: 1080px){
     html {
-      font-size: 75.75%;
+      font-size: 93%;
     }
   }
   @media(max-width: 720px){
     html {
-      font-size: 74%;
+      font-size: 90%;
+    }
+  }
+  @media(max-width: 320px){
+    html {
+      font-size: 86%;
+    }
+  }
+  @media(max-width: 280px){
+    html {
+      font-size: 80%;
     }
   }
 
   :focus{
-    outline: 0;
-    box-shadow: 0 0 0 2px purple;
+    outline: none;
   }
 
   body {
-    background: #ccc;
-    color: #ff0604;
+    background: ${(props) => props.theme.colors.white100};
+    color: ${(props) => props.theme.colors.grey900};
   }
 
   body, input-security, select, textarea, button {
@@ -49,5 +58,8 @@ export const GlobalStyles = createGlobalStyle`
   a{
     color: inherit;
     text-decoration: none;
+  }
+  .menu-active{
+    background-color: ${(props) => props.theme.colors.purple700};
   }
 `;
